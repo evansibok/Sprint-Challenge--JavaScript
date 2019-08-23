@@ -38,11 +38,19 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. What is closure?
 
-* Answer 3: 
+* Answer 3: closure is when an inner function gets access to an outer varible.
 
 4. Describe the four rules of the 'this' keyword.
 
+* Answer 4:
+** 1: global binding: when `this` is used in a global scope it becomes the window object.
+** 2: new binding: when `this` is called in a `new` constructor `this` refers to the instance of the object called.
+** 3: implicit binding: when a variable, function etc is called with a ".", the object left of the dot is the `this`.
+** 4: explicit binding: when `this` is called using `call`, `apply`, or `bind` this is explicit binding.
+
 5. Why do we need super() in an extended class?
+
+** Answer 5: We need `super()` in an extended class to enable the extended class inherit the property of the parent class.
 
 ## Project Set up
 
