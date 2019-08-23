@@ -131,8 +131,8 @@ const universities = [];
 let uniSorted = [];
 
 graduates.map(function(value) {
-	universities.push(value.university);
 	uniSorted = universities.sort()
+	universities.push(value.university);
 	return universities;
 })
 
