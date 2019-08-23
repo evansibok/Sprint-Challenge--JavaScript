@@ -17,20 +17,35 @@ function consume(param1, param2, cb){
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
+// CORRECT BUT NOT RETURNING ANYTHING...
 
+let result = 0;
 
+function add(a, b){
+  result = a + b;
+  return result;
+};
+
+function multiply(num1, num2) {
+  result = num1 * num2;
+  return result;
+};
+
+function greeting(firstName, lastName) {
+  return `Hello ${firstName} ${lastName}, nice to meet you!`;
+};
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// consume(2,2,add); // 4
-// consume(10,16,multiply); // 160
-// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+consume(2,2,add); // 4
+consume(10,16,multiply); // 160
+consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: 
+// Explanation: nestedFunction() is inside myFunction() and due to the law of closure, nestedFunction has access to the parent variables outside of its scope;
 
 
 const external = "I'm outside the function";
