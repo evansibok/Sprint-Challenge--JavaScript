@@ -128,13 +128,6 @@ const graduates = [
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
-const sorted = [];
-
-graduates.filter(function(value, index) {
-	
-	// universities.push();
-	// return universities;
-})
 
 console.log(universities);
 
@@ -153,7 +146,14 @@ graduates.forEach(function(value) {
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-let uni = [];
+const uni = [];
+
+graduates.filter(function(value) {
+	if (value.university.includes("Uni")){
+		uni.push(value.university);
+		return uni;
+	}
+})
 console.log(uni);
 
 // ==== ADVANCED Array Methods ====
