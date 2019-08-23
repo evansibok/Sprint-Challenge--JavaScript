@@ -264,6 +264,13 @@ The zoos are concenred about animals with a lower population count. Find out whi
 
 */
 const lowerPopulation = [];
+
+zooAnimals.filter(function(lowCount) {
+	if (lowCount.population < 5){
+		lowerPopulation.push(lowCount.animal_name);
+		return lowerPopulation;
+	}
+})
 console.log(lowerPopulation);
 
 /* Request 4: .reduce() 
